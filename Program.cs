@@ -22,7 +22,7 @@ namespace Connect4
             Player playerTwo = null;
             Board board = null;
             
-
+            //added to retrieve saved game
             if (File.Exists(saveFileName))
             {
                 Console.Write("Do you want to resume an old game? (Y/N)");
@@ -46,6 +46,7 @@ namespace Connect4
                 }
                 File.Delete(saveFileName);
             }
+            //game not restored so start a new one
             if(board == null)
             {
                 board = new Board();
