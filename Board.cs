@@ -1,4 +1,7 @@
-﻿using System;
+//Dale Cutshall, Linh Dang
+//CS 305, Spring 2019
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +9,12 @@ using System.Threading.Tasks;
 
 namespace Connect4
 {
+    
+    /// <summary>
+    // The main functions of the program. Can print out the board, check for winning condition, and shows the updated player moves.
+    // After the game is over the player can decide if they want to play again.
+    /// </summary>
+    
     [Serializable]
     public class Board
     {
@@ -17,7 +26,8 @@ namespace Connect4
         {
             board = new int[100, 100];
         }
-
+        
+        //Function to show the player's move on the board. Checks to make sure it is the last empty spot. 
         public void dropDisc(Player currentPlayer, int dropChoice)
         {
             int length = rows;
@@ -34,7 +44,8 @@ namespace Connect4
             } while (turn != 1);
 
         }
-
+        
+        //Prints out the connect four grid
         public void displayBoard()
         {
 
@@ -52,6 +63,7 @@ namespace Connect4
             }
             Console.WriteLine();
         }
+        //Gettter and Setter for rows and columns
         public int Rows
         {
             get
@@ -98,7 +110,10 @@ namespace Connect4
             }
             return false;
         }
-
+        
+        
+         //Function that checks for the winning condition
+        //Diagonally check still needs some work
         public bool checkfour(Player currentplayer) 
         {
             //horizontalCheck
