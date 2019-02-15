@@ -1,0 +1,112 @@
+//1st run
+Enter file name:boardsize.txt
+Player One please enter your name:
+John
+Player Two please enter your name:
+Lisa
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+
+John's Turn
+Pick a column from 1 to 7 or Enter '0' to save the game and stop:
+1
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+1 0 0 0 0 0 0
+
+Lisa's Turn
+Pick a column from 1 to 7 or Enter '0' to save the game and stop:
+1
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+2 0 0 0 0 0 0
+1 0 0 0 0 0 0
+
+John's Turn
+Pick a column from 1 to 7 or Enter '0' to save the game and stop:
+2
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+2 0 0 0 0 0 0
+1 1 0 0 0 0 0
+
+Lisa's Turn
+Pick a column from 1 to 7 or Enter '0' to save the game and stop:
+0
+Game saved. Thanks for playing
+Press any key to continue . . .
+
+//2nd run
+Do you want to resume an old game? (Y/N)yes
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+2 0 0 0 0 0 0
+1 1 0 0 0 0 0
+
+John's Turn
+Pick a column from 1 to 7 or Enter '0' to save the game and stop:
+2
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+2 1 0 0 0 0 0
+1 1 0 0 0 0 0
+
+Lisa's Turn
+Pick a column from 1 to 7 or Enter '0' to save the game and stop:
+3
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+2 1 0 0 0 0 0
+1 1 2 0 0 0 0
+
+John's Turn
+Pick a column from 1 to 7 or Enter '0' to save the game and stop:
+2
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 1 0 0 0 0 0
+2 1 0 0 0 0 0
+1 1 2 0 0 0 0
+
+Lisa's Turn
+Pick a column from 1 to 7 or Enter '0' to save the game and stop:
+3
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 1 0 0 0 0 0
+2 1 2 0 0 0 0
+1 1 2 0 0 0 0
+
+John's Turn
+Pick a column from 1 to 7 or Enter '0' to save the game and stop:
+2
+0 0 0 0 0 0 0
+0 0 0 0 0 0 0
+0 1 0 0 0 0 0
+0 1 0 0 0 0 0
+2 1 2 0 0 0 0
+1 1 2 0 0 0 0
+
+WINNER! player John WIN a game
+Do you want to play again?
+no
+Press any key to continue . . .
