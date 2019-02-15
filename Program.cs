@@ -1,4 +1,7 @@
-﻿using System;
+//Dale Cutshall, Linh Dang
+//CS 305, Spring 2019
+//Referenced programSerialized.cs (Hangman game) from syllabus 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +14,13 @@ using System.Text.RegularExpressions;
 
 namespace Connect4
 {
+      /// <summary>
+    /// Main. This is mainly where all of the input and output is done.
+    /// Gets the size of the grid, player name, asks which column you would like to select, and prints out the winner
+    /// Also gets an input file from the user determining the board size
+    /// Allows the user to save the game at any point and load the game when they start again
+    /// </summary>
+    
     class Program
     {
         //path to saved serialized data
@@ -23,6 +33,7 @@ namespace Connect4
             Board board = null;
             
             //added to retrieve saved game
+            
             if (File.Exists(saveFileName))
             {
                 Console.Write("Do you want to resume an old game? (Y/N)");
@@ -50,6 +61,7 @@ namespace Connect4
             if(board == null)
             {
                 board = new Board();
+                //Load text file 
                 Console.Write("Enter file name:");
                 fn = Console.ReadLine();
                 StreamReader inputFile = new StreamReader(fn);
@@ -66,7 +78,7 @@ namespace Connect4
 
             }
 
-           
+           //If no player create a new player up to two
             if (playerOne == null || playerTwo == null)
             {
                 playerOne = new Player();
@@ -92,6 +104,8 @@ namespace Connect4
                 dropChoice = Convert.ToInt32(Console.ReadLine());
                 if (dropChoice == 0)
                 {
+                    
+                    //Create game save file
                     Stream saveFile = File.Create(saveFileName);
                     SoapFormatter serializer = new SoapFormatter();
                     try
@@ -132,6 +146,7 @@ namespace Connect4
                 dropChoice = Convert.ToInt32(Console.ReadLine());
                 if (dropChoice == 0)
                 {
+                    //Create save game file
                     Stream saveFile = File.Create(saveFileName);
                     SoapFormatter serializer = new SoapFormatter();
                     try
